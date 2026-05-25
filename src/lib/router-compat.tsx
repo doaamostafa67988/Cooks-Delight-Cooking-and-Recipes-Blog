@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // @ts-nocheck
 // Compatibility shim so the ported pages keep their react-router-dom-style APIs
 // but use @tanstack/react-router under the hood.
@@ -68,3 +69,7 @@ export function useParams<
 >(): T {
   return useTParams({ strict: false }) as T;
 }
+=======
+// Re-export react-router-dom APIs with the same names previously used.
+export { Link, useNavigate, useLocation, useParams } from "react-router-dom";
+>>>>>>> 3257d41 (Initial commit)
